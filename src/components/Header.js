@@ -1,7 +1,8 @@
 import React from "react";
 import Search from "./Search";
+// import NewItemListing from './NewItemListing'
 
-function Header() {
+function Header({ changeSearch }) {
   return (
     <header>
       <h1>
@@ -10,7 +11,7 @@ function Header() {
         </span>
         gregslist
       </h1>
-      <Search />
+      <Search changeSearch={changeSearch} />
     </header>
   );
 }
